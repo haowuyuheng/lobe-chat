@@ -31,7 +31,7 @@
   "scripts": {
     "prebuild": "tsx scripts/prebuild.mts",
     "build": "next build",
-    "postbuild": "bun run build-sitemap,
+    "postbuild": "bun run build-sitemap",
     "build-sitemap": "tsx ./scripts/buildSitemapIndex/index.ts",
     "build:analyze": "NODE_OPTIONS=--max-old-space-size=6144 ANALYZE=true next build",
     "build:docker": "npm run prebuild && DOCKER=true next build && npm run build-sitemap",
